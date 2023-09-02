@@ -24,7 +24,7 @@ mongoose.connect(dburl, {
     console.log('Connected to MongoDB');
   });
 
-app.get('/home' ,(req,res)=>{
+app.get('/' ,(req,res)=>{
     res.render("home");
 }) 
 app.get('/cse' ,(req,res)=>{
@@ -53,7 +53,7 @@ app.use((err,req,res,next)=>{
   if(!err.message) err.message ="oh no something went wrong"
   res.status(statusCode).render('error',{err})
 })
-const port=process.env.PORT || 3000;
+const port=process.env.PORT || 8080;
 app.listen(port,()=>{
     console.log(`listerning on port ${port}`)
 })
