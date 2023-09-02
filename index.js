@@ -30,22 +30,22 @@ app.get('/' ,(req,res)=>{
 app.get('/cse' ,(req,res)=>{
     res.render("cse");
 }) 
-app.get('/attendance/:id', async (req, res) => {
-  const { id } = req.params;
+app.get('/attendance', async (req, res) => {
+  const { id } = req.query; // Access the 'id' query parameter
   
   try {
-      // Fetch the data based on the provided ID (assuming you have a corresponding model)
-      const found = await StudentsData.findOne({rollnumber:id}); // Replace YourModel with your actual model name
-      
-      if (!found) {
-          return res.status(404).send('Data not found');
-      }
-      
-      // Render the template only if data is found
-      res.render('test', { found });
+    // Fetch the data based on the provided ID (assuming you have a corresponding model)
+    const found = await StudentsData.findOne({ rollnumber: id }); // Replace YourModel with your actual model name
+
+    if (!found) {
+      return res.status(404).send('Data not found');
+    }
+
+    // Render the template only if data is found
+    res.render('test', { found });
   } catch (error) {
-      console.error(error);
-      res.status(500).send('An error occurred while fetching data');
+    console.error(error);
+    res.status(500).send('An error occurred while fetching data');
   }
 });
 app.use((err,req,res,next)=>{
