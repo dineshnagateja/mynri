@@ -13,16 +13,14 @@ mongoose.connect(dburl, {
     console.log('Connected to MongoDB');
   });
 
-const s=new StudentsData({
-    name:"somesh",
-    rollnumber:"20kp1a0596",
-    attendance:60
-
-})
-s.save()
-    .then(p=>{
-        console.log(p)
+  const studentsToInsert = [
+  ]
+  
+  // Use insertMany to insert all students at once
+  StudentsData.insertMany(studentsToInsert)
+    .then(docs => {
+      console.log('Inserted students:', docs);
     })
-    .catch(e=>{
-        console.log(e);
-    })
+    .catch(err => {
+      console.error('Error inserting students:', err);
+    });

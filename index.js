@@ -27,9 +27,13 @@ mongoose.connect(dburl, {
 app.get('/' ,(req,res)=>{
     res.render("home");
 }) 
+app.get('/developer',(req,res)=>{
+  res.render("dev");
+})
 app.get('/cse' ,(req,res)=>{
     res.render("cse");
 }) 
+
 app.get('/attendance', async (req, res) => {
   const { id } = req.query; // Access the 'id' query parameter
   

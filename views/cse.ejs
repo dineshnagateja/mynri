@@ -8,7 +8,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="new.css"/>
+  <link rel="stylesheet" href="new1.css"/>
   <title>NRI Institute of Technology</title>
 </head>
 
@@ -16,11 +16,16 @@ Online HTML, CSS and JavaScript editor to run code online.
    <!-- hidden content starts from here----------------------------------------- -->
   <div id="content" style="display: block;">
   <!-- start of nav bar --------------------------------------------------------->
+  <div class="bottom-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      NRI INSTITUTE OF TECHNOLOGY
+    </marquee>
+  </div>
   <nav class="navbar bg-body-tertiary sticky-top ">
     <div class="container-fluid" >
       <nav class="navbar bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="/home">
+          <a class="navbar-brand" href="/">
             <img src="/imagess/mobile_logo.png" alt="mynri" width="50" height="30">
           </a>
         </div>
@@ -36,34 +41,42 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">staff</a>
+              <a class="nav-link active" href="#">Faculty</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Groups
+                Departments
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">CSE</a></li>
+                <li><a class="dropdown-item" href="/cse">CSE</a></li>
                 <li><a class="dropdown-item" href="#">ECE</a></li>
                 <li><a class="dropdown-item" href="#">CIVIL</a></li>
                 <li><a class="dropdown-item" href="#">MECH</a></li>
               
               </ul>
+              <li class="nav-item">
+                <a class="nav-link active" href="/developer">Developer</a>
+              </li>
             </li>
         </div>
       </div>
     </div>
   </nav>
- 
-  <h1>Student Details</h1>
-  <form action="/attendance" method="get">
-    <input type="text" name="id" required></input>
-    <button>submit</button>
-  </form>
 
+  <!-- end of navbar -------------------------------------------------------------->
+  <!-- floating message starts from here-------------------------------------------------->
+  
+  <!--students form starts  here ---------------------------------------------------------------->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>NOTICE</strong> New Features will be released soon -- stay tuned
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <h1 style="text-align: center;">Student Details</h1>
+  <form action="/attendance" method="get" class="student-form">
+    <input type="text" name="id" required>
+    <button type="submit" >Submit</button>
+  </form>
 <!--unhidden content starts here ---------------------------------------------------------------------->
 <div id="message" style="display: none;">
   <div class="scrolling-content-container text-center">
@@ -76,9 +89,9 @@ Online HTML, CSS and JavaScript editor to run code online.
     <h1 class="scrolling-content">Does not support for windows and Tablet versions</h1>
   </div>
 </div>
-<script src="cse-attendence.js"></script>
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="neww.js"></script>
 </body>
 
 

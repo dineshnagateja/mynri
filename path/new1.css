@@ -1,0 +1,42 @@
+/* Styles for the student form */
+.student-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .student-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .student-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .student-form button:hover {
+    background-color: #45a049;
+  }
+  
+marquee {
+  background-color: #26272b; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+}
+  
+  /* Additional styles for your navigation bar can be placed below this */
+  

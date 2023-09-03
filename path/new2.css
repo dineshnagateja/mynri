@@ -1,0 +1,68 @@
+/* Styles for the custom table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+  }
+  
+  .table-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .table-header th {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-row:hover {
+    background-color: #ccc;
+  }
+  
+  .table-row td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+  
+  /* Style for the table cells in the header row */
+  .table-header th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Style for the attendance column with a progress bar */
+  .table-row .attendance {
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+  }
+  
+  /* Style for the attendance percentage text */
+  .attendance-percentage {
+    font-weight: bold;
+    color: #333;
+  }
+  
+marquee {
+  background-color: #26272b; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+}
+  /* Additional styles can be added as needed */
+  
