@@ -1,0 +1,57 @@
+marquee {
+    background-color: #26272b; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+  }
+/* Center the new-container horizontally and vertically */
+.new-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    margin: 0;
+  }
+  
+  /* Style the new-profile-pic */
+  .new-profile-pic {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 4px solid #010508; /* Add a border with a blue color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  }
+  
+  /* Style the new-card */
+  .new-card {
+    text-align: center;
+  }
+  
+  /* Style the new-card-title */
+  .new-card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #3498db;
+    margin-top: 10px;
+  }
+  
+  /* Style the new-content below the picture */
+  .new-content {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* Style the new-card-text */
+  .new-card-text {
+    font-size: 1.2rem;
+    color: #333; /* Dark text color */
+    margin: 20px auto; /* Add spacing around the text */
+    line-height: 1.5; /* Improve text readability with increased line height */
+  }
+  
+  /* Style the strong text within the new-card-text */
+  .new-content strong {
+    color: #e74c3c; /* Red color for strong text */
+  }
+  
